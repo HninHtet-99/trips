@@ -1,0 +1,28 @@
+{
+    "trips":[
+        {
+            "id": 1,
+            "location": "2nights in Kalaw",
+            "price": 200000,
+            "country": "Myanmar"
+        },
+        {
+            "id": 2,
+            "location": "2nights in Ngapali",
+            "price": 100000,
+            "country": "Myanmar"
+        },
+        {
+            "id": 3,
+            "location": "2nights in Inle",
+            "price": 300000,
+            "country": "Myanmar"
+        },
+        {
+            "id": 4,
+            "location": "2nights in Chaing Mai",
+            "price": 300000,
+            "country": "Thailand"
+        }
+    ]
+}

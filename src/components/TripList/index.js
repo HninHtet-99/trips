@@ -5,7 +5,7 @@ import useFetch from "../../hooks/useFetch";
 export default function TripList() {
   let [url, setUrl] = useState("http://localhost:3001/trips");
 
-  let { data: trips, loading, error } = useFetch(url);
+  let { data: trips, loading, error } = useFetch(url, {type: 'GET'});
 
   return (
     <div className="container">

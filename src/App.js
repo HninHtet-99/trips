@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <button onClick={() => setShow(false)}>hide trips</button>
+      <button onClick={() => setShow(false)}>hide trips </button>
       {show && <TripList />}
     </>
   );

@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import TripList from "./components/TripList";
 
 function App() {
-  let [show, setShow] = useState(true);
+  let [data, setData] = useState("data");
 
+  let myFunction = () => {
+    setData("update data");
+  };
+
+  useEffect(()=>{
+    myFunction();
+    console.log('update data');
+  },[myFunction])
+  
   return (
     <>
-      <button onClick={() => setShow(false)}>hide trips </button>
-      {show && <TripList />}
+      <h1>{data}</h1>
+      <TripList />
     </>
   );
 }
-
 export default App;
